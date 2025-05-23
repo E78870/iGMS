@@ -1,0 +1,957 @@
+[2025-05-23 22:16:38.763] [info]  version sql update:
+DROP TABLE IF EXISTS `column_table`;
+CREATE TABLE `column_table`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `createTime` datetime NULL DEFAULT NULL COMMENT '创建时间',
+  `updateTime` datetime NULL DEFAULT NULL COMMENT '上次修改时间',
+  `createBy` bigint(20) NULL DEFAULT NULL COMMENT '创建人id',
+  `createByName` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '创建人',
+  `updateBy` bigint(20) NULL DEFAULT NULL COMMENT '修改人id',
+  `updateByName` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '修改人',
+  `deleted` bigint(20) NULL DEFAULT 0 COMMENT '是否删除',
+  `sqlTableName` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '数据库表名',
+  `tableName` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '表名',
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE INDEX `sqlTableName`(`sqlTableName`, `deleted`) USING BTREE,
+  UNIQUE INDEX `tableName`(`tableName`, `deleted`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 142 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '自定义列的表' ROW_FORMAT = DYNAMIC;
+
+-- ----------------------------
+-- Records of column_table
+-- ----------------------------
+INSERT INTO `column_table` VALUES (2, '2022-04-10 15:29:08', '2022-04-10 15:29:08', 0, 'admin', 0, 'admin', 0, 'user', '系统管理,用户管理');
+INSERT INTO `column_table` VALUES (3, '2022-04-10 19:30:51', '2022-04-10 19:30:51', 0, 'admin', 0, 'admin', 0, 'login_log', '系统管理,登录日志');
+INSERT INTO `column_table` VALUES (4, '2022-04-10 19:52:39', '2022-04-10 19:52:39', 0, 'admin', 0, 'admin', 0, 'role', '系统管理,角色管理');
+INSERT INTO `column_table` VALUES (5, '2022-04-17 13:13:56', '2022-04-17 13:13:56', 0, 'admin', 0, 'admin', 0, 'organize', '系统管理,组织架构');
+INSERT INTO `column_table` VALUES (6, '2022-04-19 12:52:47', '2022-04-19 12:52:47', 0, 'admin', 0, 'admin', 0, 'appliances', '新器具管理');
+INSERT INTO `column_table` VALUES (7, '2022-04-21 19:40:06', '2022-04-21 19:40:06', 0, 'admin', 0, 'admin', 0, 'notice', '通知待办,我的通知');
+INSERT INTO `column_table` VALUES (8, '2022-04-21 19:49:51', '2022-04-21 19:49:51', 0, 'admin', 0, 'admin', 0, 'need_handle', '通知待办,我的待办');
+INSERT INTO `column_table` VALUES (10, '2022-04-22 09:25:08', '2022-04-24 15:52:37', 0, 'admin', 0, 'admin', 0, 'code_setting', '系统管理,编码管理');
+INSERT INTO `column_table` VALUES (11, '2022-04-22 10:42:41', '2022-04-22 10:42:41', 0, 'admin', 0, 'admin', 0, 'appliances_params', '新器具管理,计量参数');
+INSERT INTO `column_table` VALUES (12, '2022-04-28 20:36:07', '2022-04-28 20:36:07', 0, 'admin', 0, 'admin', 0, 'metering_maintain', '新器具管理,计量维护');
+INSERT INTO `column_table` VALUES (13, '2022-04-29 00:34:22', '2022-04-29 00:34:22', 0, 'admin', 0, 'admin', 0, 'metering_confirm', '新器具管理,计量确认');
+INSERT INTO `column_table` VALUES (14, '2022-05-05 23:48:29', '2022-05-05 23:48:29', 0, 'admin', 0, 'admin', 0, 'appliances_ledger', '器具台账,器具台账');
+INSERT INTO `column_table` VALUES (15, '2022-05-05 23:48:29', '2022-05-05 23:48:29', 0, 'admin', 0, 'admin', 0, 'appliances_ledger_params', '器具台账,计量参数');
+INSERT INTO `column_table` VALUES (16, '2022-05-06 12:08:30', '2022-05-06 12:08:30', 0, 'admin', 0, 'admin', 0, 'annual_inspection_plan', '年度检定计划');
+INSERT INTO `column_table` VALUES (17, '2022-05-06 12:11:21', '2022-05-06 12:12:07', 0, 'admin', 0, 'admin', 0, 'annual_inspection_plan_item', '年度检定计划,详情');
+INSERT INTO `column_table` VALUES (18, '2022-05-07 16:30:49', '2022-05-10 15:24:07', 0, 'admin', 0, 'admin', 0, 'inspection_task_list', '器具台账,送检任务单');
+INSERT INTO `column_table` VALUES (19, '2022-05-07 16:30:59', '2022-05-13 11:15:40', 0, 'admin', 0, 'admin', 0, 'inspection_task(copy)', '器具台账,送检任务单,详情');
+INSERT INTO `column_table` VALUES (20, '2022-05-07 16:54:17', '2022-05-07 16:54:17', 0, 'admin', 0, 'admin', 0, 'equipment', '设备管理');
+INSERT INTO `column_table` VALUES (21, '2022-05-10 15:40:42', '2022-05-10 20:37:50', 0, 'admin', 0, 'admin', 0, 'edit_record', '编辑记录');
+INSERT INTO `column_table` VALUES (23, '2022-05-13 11:12:02', '2022-05-13 11:15:45', 0, 'admin', 0, 'admin', 0, 'inspection_task', '个人任务单');
+INSERT INTO `column_table` VALUES (24, '2022-05-13 17:25:44', '2022-05-13 17:25:44', 0, 'admin', 0, 'admin', 0, 'metering_record', '器具台账,历年计量报告');
+INSERT INTO `column_table` VALUES (25, '2022-05-13 14:28:32', '2022-05-13 14:28:32', 0, 'admin', 0, 'admin', 0, 'inspection_record', '器具台账,送检履历');
+INSERT INTO `column_table` VALUES (26, '2022-05-15 04:53:58', '2022-05-15 04:53:58', 0, 'admin', 0, 'admin', 0, 'metering_confirm_record', '器具台账,计量确认履历');
+INSERT INTO `column_table` VALUES (27, '2022-05-16 10:33:04', '2022-05-16 10:33:04', 0, 'admin', 0, 'admin', 0, 'confirm_button', '确认按钮');
+INSERT INTO `column_table` VALUES (28, '2022-05-16 10:33:04', '2022-05-16 10:33:04', 0, 'admin', 0, 'admin', 0, 'maintain_button', '维护按钮');
+INSERT INTO `column_table` VALUES (29, '2022-05-13 14:22:58', '2022-05-13 14:22:58', 0, 'admin', 0, 'admin', 0, 'receive_button', '接收按钮');
+INSERT INTO `column_table` VALUES (30, '2022-05-13 20:01:07', '2022-05-13 20:01:07', 0, 'admin', 0, 'admin', 0, 'inspection_button', '送检按钮');
+INSERT INTO `column_table` VALUES (31, '2022-05-13 20:07:36', '2022-05-13 20:07:36', 0, 'admin', 0, 'admin', 0, 'visit_button', '确认上门日期按钮');
+INSERT INTO `column_table` VALUES (32, '2022-05-13 20:10:30', '2022-05-13 20:10:30', 0, 'admin', 0, 'admin', 0, 'back_button', '返回按钮');
+INSERT INTO `column_table` VALUES (33, '2022-05-17 15:36:55', '2022-05-17 15:36:55', 11, 'd1', 11, 'd1', 0, 'task_confirm_button', '任务确认按钮');
+INSERT INTO `column_table` VALUES (34, '2022-05-18 15:51:52', '2022-05-18 15:51:52', 0, 'admin', 0, 'admin', 0, 'label_print_apply', '标签打印申请');
+INSERT INTO `column_table` VALUES (35, '2022-05-18 17:25:33', '2022-05-18 17:25:33', 11, 'd1', 11, 'd1', 0, 'label_print_handle', '标签打印处理');
+INSERT INTO `column_table` VALUES (36, '2022-05-19 14:43:25', '2022-05-19 14:51:06', 0, 'admin', 11, 'd1', 0, 'metering_staff', '计量人员管理,计量人员');
+INSERT INTO `column_table` VALUES (37, '2022-05-19 16:38:08', '2022-05-19 16:38:08', 0, 'admin', 0, 'admin', 0, 'metering_staff_certificate', '计量人员管理,计量人员,证书');
+INSERT INTO `column_table` VALUES (38, '2022-05-25 01:43:06', '2022-05-25 01:43:06', 0, 'admin', 0, 'admin', 0, 'change_admin', '变更管理');
+INSERT INTO `column_table` VALUES (39, '2022-05-25 19:53:15', '2022-05-25 19:53:15', 0, 'admin', 0, 'admin', 0, 'receive_record', '领用记录');
+INSERT INTO `column_table` VALUES (40, '2022-05-26 03:06:09', '2022-05-26 03:06:09', 0, 'admin', 0, 'admin', 0, 'move_record', '转移记录');
+INSERT INTO `column_table` VALUES (41, '2022-05-26 17:01:54', '2022-05-26 17:01:54', 0, 'admin', 0, 'admin', 0, 'other_events', '器具台账,其他事件履历');
+INSERT INTO `column_table` VALUES (42, '2022-05-27 00:28:47', '2022-05-27 00:28:47', 0, 'admin', 0, 'admin', 0, 'move_resume', '器具台账,转移履历');
+INSERT INTO `column_table` VALUES (43, '2022-05-27 02:50:46', '2022-05-27 02:50:46', 0, 'admin', 0, 'admin', 0, 'borrow_record', '借还记录');
+INSERT INTO `column_table` VALUES (44, '2022-05-27 03:15:02', '2022-05-27 03:15:02', 0, 'admin', 0, 'admin', 0, 'borrow_resume', '器具台账,借还履历');
+INSERT INTO `column_table` VALUES (46, '2022-05-27 03:44:15', '2022-05-27 03:44:15', 0, 'admin', 0, 'admin', 0, 'maintenance_record', '维保记录');
+INSERT INTO `column_table` VALUES (47, '2022-05-27 15:13:05', '2022-05-27 15:13:05', 0, 'admin', 0, 'admin', 0, 'maintenance_resume', '器具台账,维保履历');
+INSERT INTO `column_table` VALUES (49, '2022-05-27 16:28:38', '2022-05-27 16:28:38', 0, 'admin', 0, 'admin', 0, 'move_record_approve', '转移记录,审批');
+INSERT INTO `column_table` VALUES (50, '2022-05-27 16:29:48', '2022-05-27 16:29:48', 0, 'admin', 0, 'admin', 0, 'move_record_confirm', '转移记录,确认');
+INSERT INTO `column_table` VALUES (52, '2022-05-29 03:28:25', '2022-05-29 03:28:25', 0, 'admin', 0, 'admin', 0, 'msa_resume', '器具台账,MSA履历');
+INSERT INTO `column_table` VALUES (54, '2022-05-29 05:24:43', '2022-05-29 05:24:43', 0, 'admin', 0, 'admin', 0, 'change_resume', '器具台账,变更履历');
+INSERT INTO `column_table` VALUES (57, '2022-05-31 14:16:04', '2022-05-31 14:16:04', 18, '主管', 18, '主管', 0, 'inspection_task_confirm', '待确认任务单');
+INSERT INTO `column_table` VALUES (58, '2022-06-02 16:08:48', '2022-06-02 16:08:48', 0, 'admin', 0, 'admin', 0, 'borrow_record_confirm', '借还记录,确认');
+INSERT INTO `column_table` VALUES (59, '2022-06-02 16:11:28', '2022-06-02 16:11:28', 0, 'admin', 0, 'admin', 0, 'borrow_record_return', '借还记录,归还');
+INSERT INTO `column_table` VALUES (60, '2022-06-09 18:02:28', '2022-06-09 18:02:28', 0, 'admin', 0, 'admin', 0, 'borrow_resume_borrow', '借还履历,借出');
+INSERT INTO `column_table` VALUES (61, '2022-06-09 18:05:53', '2022-06-09 18:05:53', 0, 'admin', 0, 'admin', 0, 'borrow_resume_return', '借还履历,归还');
+INSERT INTO `column_table` VALUES (62, '2022-06-14 12:12:00', '2022-06-14 12:12:00', 0, 'admin', 0, 'admin', 0, 'measure_agency', '计量机构');
+INSERT INTO `column_table` VALUES (63, '2022-06-22 13:51:22', '2022-06-22 13:51:22', 0, 'admin', 0, 'admin', 0, 'verification_cost', '更新检定费用');
+INSERT INTO `column_table` VALUES (65, '2022-06-23 17:16:05', '2022-06-23 17:16:05', 0, 'admin', 0, 'admin', 0, 'msa_item', 'MSA项目');
+INSERT INTO `column_table` VALUES (66, '2022-07-08 00:00:00', '2022-07-08 00:00:00', 0, 'admin', 0, 'admin', 0, 'print_button', '打印按钮');
+INSERT INTO `column_table` VALUES (67, '2022-07-19 16:12:19', '2022-07-19 16:12:19', 11, 'd1', 11, 'd1', 0, 'inspection_task(all)', '全部个人任务');
+INSERT INTO `column_table` VALUES (68, '2022-08-05 12:10:13', '2022-08-05 12:10:13', 0, 'admin', 0, 'admin', 0, 'batch_receive', '批量领用');
+INSERT INTO `column_table` VALUES (69, '2022-08-05 15:47:37', '2022-08-05 15:47:37', 0, 'admin', 0, 'admin', 0, 'batch_move', '批量转移');
+INSERT INTO `column_table` VALUES (70, '2022-08-05 15:48:02', '2022-08-05 15:48:02', 0, 'admin', 0, 'admin', 0, 'batch_borrow', '批量借还');
+INSERT INTO `column_table` VALUES (71, '2022-08-06 10:08:20', '2022-08-06 10:08:20', 11, 'd1', 11, 'd1', 0, 'inspection_task(return)', '待返回任务单');
+INSERT INTO `column_table` VALUES (72, '2022-08-18 17:10:55', '2022-08-18 17:10:55', 0, 'admin', 0, 'admin', 0, 'option_association_config', '系统管理,选项关联配置');
+INSERT INTO `column_table` VALUES (73, '2022-10-27 15:55:09', '2022-10-27 15:55:09', 28, 'D1', 28, 'D1', 0, 'msa_annual_plan', '质量管理,MSA年度计划');
+INSERT INTO `column_table` VALUES (74, '2022-10-27 15:55:31', '2022-10-27 15:55:31', 28, 'D1', 28, 'D1', 0, 'msa_annual_plan_item', '质量管理,MSA年度计划,详情');
+INSERT INTO `column_table` VALUES (75, '2023-02-16 17:59:39', '2023-02-16 17:59:39', 0, 'admin', 0, 'admin', 0, 'cycle_rules', '系统管理,计量周期规则');
+INSERT INTO `column_table` VALUES (76, '2023-02-17 00:42:31', '2023-02-17 00:42:31', 0, 'admin', 0, 'admin', 0, 'cycle_change', '周期变更管理');
+INSERT INTO `column_table` VALUES (77, '2023-04-13 18:54:34', '2023-04-13 18:54:34', 0, 'admin', 0, 'admin', 0, 'theme_settings', '系统管理,UI设置,主题设置');
+INSERT INTO `column_table` VALUES (78, '2023-04-14 16:12:55', '2023-04-14 16:12:55', 30, 'wy', 30, 'wy', 0, 'system_setting_operation_history', '系统管理,系统设置操作历史');
+INSERT INTO `column_table` VALUES (79, '2023-04-17 21:46:35', '2023-04-17 21:46:35', 0, 'admin', 0, 'admin', 0, 'spot_check_record', '点检记录');
+INSERT INTO `column_table` VALUES (80, '2023-04-17 22:04:37', '2023-04-17 22:04:37', 0, 'admin', 0, 'admin', 0, 'spot_check_item', '点检项目');
+INSERT INTO `column_table` VALUES (81, '2023-04-18 17:23:39', '2023-04-18 17:23:39', 0, 'admin', 0, 'admin', 0, 'annual_maintenance_plan', '维保管理,年度维保计划');
+INSERT INTO `column_table` VALUES (83, '2023-04-18 18:28:32', '2023-04-18 18:28:32', 0, 'admin', 0, 'admin', 0, 'maintenance_records', '年度维保计划,维保记录');
+INSERT INTO `column_table` VALUES (84, '2023-04-19 09:08:03', '2023-04-19 09:08:03', 0, 'admin', 0, 'admin', 0, 'maintenance_template', '维保管理,维保模板');
+INSERT INTO `column_table` VALUES (85, '2023-04-19 09:12:47', '2023-04-19 09:12:47', 0, 'admin', 0, 'admin', 0, 'maintenance_data', '维保模板,维保详情');
+INSERT INTO `column_table` VALUES (86, '2023-04-23 14:08:18', '2023-04-23 14:08:18', 0, 'admin', 0, 'admin', 0, 'annual_check_plan', '年度期间核查计划');
+INSERT INTO `column_table` VALUES (87, '2023-04-23 16:53:34', '2023-04-23 16:55:48', 0, 'admin', 28, 'D1', 0, 'check_plan_content', '年度期间核查计划,计划内容');
+INSERT INTO `column_table` VALUES (88, '2023-04-23 20:22:47', '2023-04-23 20:22:47', 0, 'admin', 0, 'admin', 0, 'check_methods', '核查方法');
+INSERT INTO `column_table` VALUES (89, '2023-04-24 09:17:38', '2023-04-24 09:17:38', 28, 'D1', 28, 'D1', 0, 'appliancesLedger_checkMaintenance_resume', '器具台账,期间核查履历');
+INSERT INTO `column_table` VALUES (90, '2023-04-24 11:39:34', '2023-04-24 11:39:34', 0, 'admin', 0, 'admin', 0, 'annual_maintenance_item', '年度维保计划,详情');
+INSERT INTO `column_table` VALUES (91, '2023-04-24 16:10:27', '2023-04-24 16:10:27', 0, 'admin', 0, 'admin', 0, 'maintenance_plan_data', '维保计划,维保详情');
+INSERT INTO `column_table` VALUES (92, '2023-04-27 15:27:16', '2023-04-27 15:27:16', 0, 'admin', 0, 'admin', 0, 'external_annual_plan', '外校管理,外校年计划');
+INSERT INTO `column_table` VALUES (93, '2023-04-27 15:36:33', '2023-04-27 15:36:33', 0, 'admin', 0, 'admin', 0, 'external_monthly_plan', '外校管理,外校月计划');
+INSERT INTO `column_table` VALUES (94, '2023-04-27 15:43:07', '2023-04-27 15:43:07', 0, 'admin', 0, 'admin', 0, 'internal_annual_plan', '内校管理,内校年计划');
+INSERT INTO `column_table` VALUES (95, '2023-04-27 15:49:27', '2023-04-27 15:49:27', 0, 'admin', 0, 'admin', 0, 'internal_monthly_plan', '内校管理,内校月计划');
+INSERT INTO `column_table` VALUES (96, '2023-04-27 18:51:32', '2023-04-27 18:51:32', 0, 'admin', 0, 'admin', 0, 'external_daily_plan', '外校管理,外校每日任务单');
+INSERT INTO `column_table` VALUES (97, '2023-04-27 18:51:50', '2023-04-27 18:51:50', 0, 'admin', 0, 'admin', 0, 'internal_daily_plan', '内校管理,内校每日任务单');
+INSERT INTO `column_table` VALUES (98, '2023-04-28 11:42:47', '2023-04-28 11:42:47', 0, 'admin', 0, 'admin', 0, 'external_task(1)', '外校管理,外校年计划,任务');
+INSERT INTO `column_table` VALUES (99, '2023-04-28 13:24:09', '2023-04-28 13:24:09', 0, 'admin', 0, 'admin', 0, 'external_task(2)', '外校管理,外校月计划,任务');
+INSERT INTO `column_table` VALUES (100, '2023-04-28 13:39:03', '2023-04-28 13:39:03', 0, 'admin', 0, 'admin', 0, 'external_task(3)', '外校管理,外校每日任务单,任务');
+INSERT INTO `column_table` VALUES (101, '2023-04-28 13:44:34', '2023-04-28 13:44:34', 0, 'admin', 0, 'admin', 0, 'internal_task(1)', '内校管理,内校年计划,任务');
+INSERT INTO `column_table` VALUES (102, '2023-04-28 13:53:45', '2023-04-28 13:53:45', 0, 'admin', 0, 'admin', 0, 'internal_task(2)', '内校管理,内校月计划,任务');
+INSERT INTO `column_table` VALUES (103, '2023-04-28 13:58:40', '2023-04-28 13:58:40', 0, 'admin', 0, 'admin', 0, 'internal_task(3)', '内校管理,内校每日任务单,任务');
+INSERT INTO `column_table` VALUES (104, '2023-04-28 15:41:57', '2023-04-28 15:41:57', 0, 'admin', 0, 'admin', 0, 'appliances_ledger(1)', '外校管理,外校年计划,器具台账');
+INSERT INTO `column_table` VALUES (105, '2023-04-28 16:06:44', '2023-04-28 16:06:44', 0, 'admin', 0, 'admin', 0, 'appliances_ledger(2)', '外校管理,外校月计划,器具台账');
+INSERT INTO `column_table` VALUES (106, '2023-04-28 16:07:31', '2023-04-28 16:07:31', 0, 'admin', 0, 'admin', 0, 'appliances_ledger(3)', '外校管理,外校每日任务单,器具台账');
+INSERT INTO `column_table` VALUES (107, '2023-04-28 16:09:24', '2023-04-28 16:09:24', 0, 'admin', 0, 'admin', 0, 'appliances_ledger(4)', '内校管理,内校年计划,器具台账');
+INSERT INTO `column_table` VALUES (108, '2023-04-28 16:17:39', '2023-04-28 16:17:39', 0, 'admin', 0, 'admin', 0, 'appliances_ledger(5)', '内校管理,内校月计划,器具台账');
+INSERT INTO `column_table` VALUES (109, '2023-04-28 16:18:18', '2023-04-28 16:18:18', 0, 'admin', 0, 'admin', 0, 'appliances_ledger(6)', '内校管理,内校每日任务单,器具台账');
+INSERT INTO `column_table` VALUES (110, '2023-05-02 19:51:05', '2023-05-02 22:15:35', 28, 'D1', 28, 'D1', 0, 'external_task(person)', '外校管理,外校个人任务');
+INSERT INTO `column_table` VALUES (111, '2023-05-04 15:31:17', '2023-05-04 15:32:45', 28, 'D1', 28, 'D1', 0, 'internal_task(person)', '内校管理,内校个人任务');
+INSERT INTO `column_table` VALUES (112, '2023-05-05 15:11:01', '2023-05-05 15:11:01', 28, 'D1', 28, 'D1', 0, 'external_task(confirm)', '外校管理,外校待确认任务');
+INSERT INTO `column_table` VALUES (113, '2023-05-05 15:11:23', '2023-05-05 15:11:23', 28, 'D1', 28, 'D1', 0, 'internal_task(confirm)', '内校管理,内校待确认任务');
+INSERT INTO `column_table` VALUES (114, '2023-05-06 14:54:29', '2023-05-06 14:54:29', 28, 'D1', 28, 'D1', 0, 'external_task(4)', '外校管理,外校月计划,年计划任务');
+INSERT INTO `column_table` VALUES (115, '2023-05-06 20:38:04', '2023-05-06 20:38:04', 28, 'D1', 28, 'D1', 0, 'external_task(5)', '外校管理,外校每日任务单,年计划任务');
+INSERT INTO `column_table` VALUES (116, '2023-05-06 20:38:31', '2023-05-06 20:38:31', 28, 'D1', 28, 'D1', 0, 'external_task(6)', '外校管理,外校每日任务单,月计划任务');
+INSERT INTO `column_table` VALUES (117, '2023-05-06 21:00:23', '2023-05-06 21:00:23', 28, 'D1', 28, 'D1', 0, 'internal_task(4)', '内校管理,内校月计划,年计划任务');
+INSERT INTO `column_table` VALUES (118, '2023-05-06 21:00:54', '2023-05-06 21:00:54', 28, 'D1', 28, 'D1', 0, 'internal_task(5)', '内校管理,内校每日任务单,年计划任务');
+INSERT INTO `column_table` VALUES (119, '2023-05-06 21:01:18', '2023-05-06 21:01:18', 28, 'D1', 28, 'D1', 0, 'internal_task(6)', '内校管理,内校每日任务单,月计划任务');
+INSERT INTO `column_table` VALUES (120, '2023-06-05 16:56:54', '2023-06-05 16:56:54', 28, 'D1', 28, 'D1', 0, 'maintain_internal_inspection', '器具台账,计量维护,内检维护');
+INSERT INTO `column_table` VALUES (121, '2023-06-05 17:49:07', '2023-06-05 17:49:28', 28, 'D1', 28, 'D1', 0, 'maintain_internal_inspection_standard', '器具台账,计量维护,内检维护,标准器及环境条件');
+INSERT INTO `column_table` VALUES (123, '2023-06-07 15:14:41', '2023-06-07 15:14:41', 28, 'D1', 28, 'D1', 0, 'metering_confirm_record（inter）', '器具台账,计量维护,内检确认');
+INSERT INTO `column_table` VALUES (124, '2023-06-13 10:41:05', '2023-06-13 10:41:05', 154, '导入测试2', 154, '导入测试2', 0, 'spot_check_record(2)', '器具台账,点检履历');
+INSERT INTO `column_table` VALUES (125, '2023-06-29 10:39:13', '2023-06-29 10:39:13', 28, 'demo1名字', 28, 'demo1名字', 0, 'user(2)', '个人资料');
+INSERT INTO `column_table` VALUES (127, '2023-06-29 21:11:30', '2023-06-29 21:11:30', 28, 'demo1名字', 28, 'demo1名字', 0, 'appliances_ledger(annual_check_plan)', '年度期间核查计划,计划内容,器具台账');
+INSERT INTO `column_table` VALUES (128, '2023-07-01 14:58:43', '2023-07-01 14:58:43', 28, 'demo1名字', 28, 'demo1名字', 0, 'external_task(inspection_rate)', '计量看板,外校月送检率');
+INSERT INTO `column_table` VALUES (129, '2023-07-01 14:59:33', '2023-07-01 14:59:33', 28, 'demo1名字', 28, 'demo1名字', 0, 'external_task(complete_rate)', '计量看板,外校月完成率');
+INSERT INTO `column_table` VALUES (130, '2023-07-01 14:59:48', '2023-07-01 14:59:48', 28, 'demo1名字', 28, 'demo1名字', 0, 'external_task(qualified_rate)', '计量看板,外校月合格率');
+INSERT INTO `column_table` VALUES (131, '2023-07-01 15:46:22', '2023-07-01 15:46:22', 28, 'demo1名字', 28, 'demo1名字', 0, 'appliances_ledger(appliancesLevelGroup)', '计量看板,管理分类');
+INSERT INTO `column_table` VALUES (132, '2023-07-01 15:46:46', '2023-07-01 15:46:46', 28, 'demo1名字', 28, 'demo1名字', 0, 'appliances_ledger(deptGroup)', '计量看板,部门器具统计');
+INSERT INTO `column_table` VALUES (133, '2023-07-01 15:47:24', '2023-07-01 15:47:24', 28, 'demo1名字', 28, 'demo1名字', 0, 'appliances_ledger(appliancesTypeGroupCost)', '计量看板,费用统计');
+INSERT INTO `column_table` VALUES (135, '2023-07-13 17:02:13', '2023-07-13 17:02:13', 0, 'admin', 0, 'admin', 0, 'msa_record', 'MSA管理,MSA记录');
+INSERT INTO `column_table` VALUES (136, '2023-07-13 17:36:01', '2023-07-13 17:36:01', 28, 'demo1名字', 28, 'demo1名字', 0, 'msa_record(2)', 'MSA管理,MSA记录,研究方法项');
+INSERT INTO `column_table` VALUES (137, '2023-07-13 17:39:34', '2023-07-13 17:39:34', 28, 'demo1名字', 28, 'demo1名字', 0, 'msa_record(3)', 'MSA管理,MSA记录,GRR数据录入');
+INSERT INTO `column_table` VALUES (138, '2023-08-18 15:21:28', '2023-08-18 15:21:28', 28, 'demo1名字', 28, 'demo1名字', 0, 'msa_record(4)', 'MSA管理,MSA记录,Kappa数据录入');
+INSERT INTO `column_table` VALUES (139, '2023-08-18 15:27:32', '2023-08-18 15:27:32', 28, 'demo1名字', 28, 'demo1名字', 0, 'msa_record(5)', 'MSA管理,MSA记录,Bias数据录入');
+INSERT INTO `column_table` VALUES (141, '2023-08-23 17:40:43', '2023-08-23 17:40:43', 28, 'demo1名字', 28, 'demo1名字', 0, 'appliances_ledger(7)', '器具台账,归档器具');
+
+
+[2025-05-23 22:16:38.765] [info]  version sql update:SELECT * FROM `user` WHERE id = 0;
+[2025-05-23 22:16:38.766] [info]  version sql update:SELECT * FROM `user` WHERE id = 0;
+[2025-05-23 22:16:38.772] [info]  version sql update:UPDATE exe_version
+                                                                  SET version="2.1.5"
+                                                                  WHERE Id = 1
+[2025-05-23 22:16:38.772] [info]  run sql success
+[2025-05-23 22:16:39.794] [info]  stdout: 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[2025-05-23 22:16:39.799] [info]  stdout:  :: Spring Boot ::                (v3.1.5)
+
+
+[2025-05-23 22:16:39.888] [info]  stdout: 2025-05-23 22:16:39  INFO 16140 --- [           main] com.mzinno.project.ProjectApplication    : Starting ProjectApplication v0.0.1-SNAPSHOT using Java 21 with PID 16140 (C:\Program00\iGMS\resources\app.asar.unpacked\public\java\project.jar started by fx8350 in C:\Program00\iGMS)
+
+[2025-05-23 22:16:39.889] [info]  stdout: 2025-05-23 22:16:39  INFO 16140 --- [           main] com.mzinno.project.ProjectApplication    : The following 1 profile is active: "default"
+
+[2025-05-23 22:16:42.408] [info]  stdout: 2025-05-23 22:16:42  INFO 16140 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 45679 (http)
+
+[2025-05-23 22:16:42.418] [info]  stdout: 2025-05-23 22:16:42  INFO 16140 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+
+[2025-05-23 22:16:42.418] [info]  stdout: 2025-05-23 22:16:42  INFO 16140 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+
+[2025-05-23 22:16:42.511] [info]  stdout: 2025-05-23 22:16:42  INFO 16140 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+
+[2025-05-23 22:16:42.512] [info]  stdout: 2025-05-23 22:16:42  INFO 16140 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2561 ms
+
+[2025-05-23 22:16:42.944] [info]  stdout:  _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.4 
+
+[2025-05-23 22:16:44.591] [info]  stdout: 2025-05-23 22:16:44  INFO 16140 --- [           main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+
+[2025-05-23 22:16:44.610] [info]  stdout: 2025-05-23 22:16:44  INFO 16140 --- [           main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+[2025-05-23 22:16:44.611] [info]  stdout: 2025-05-23 22:16:44  INFO 16140 --- [           main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+
+[2025-05-23 22:16:44.612] [info]  stdout: 2025-05-23 22:16:44  INFO 16140 --- [           main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+
+[2025-05-23 22:16:44.613] [info]  stdout: 2025-05-23 22:16:44  INFO 16140 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+[2025-05-23 22:16:44.614] [info]  stdout: 2025-05-23 22:16:44  INFO 16140 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-05-23 22:16:44  INFO 16140 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2025-05-23 22:16:44  INFO 16140 --- [           main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@80bfdc6
+
+[2025-05-23 22:16:47.169] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+
+[2025-05-23 22:16:47.677] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51c65a43
+
+[2025-05-23 22:16:47.679] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+[2025-05-23 22:16:47.722] [info]  stdout: 2025-05-23 22:16:47 ERROR 16140 --- [         task-1] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void com.mzinno.project.schedule.TenantTaskExecutor.executeTasksForAllTenants(com.mzinno.project.schedule.ScheduleTask)
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.context.ApplicationContext.getBean(java.lang.Class)" because "com.mzinno.project.utils.SpringContextUtil.applicationContext" is null
+	at com.mzinno.project.utils.SpringContextUtil.getBean(SpringContextUtil.java:47) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.schedule.TenantTaskExecutor.executeTasksForAllTenants(TenantTaskExecutor.java:29) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+
+[2025-05-23 22:16:47.875] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] com.mzinno.project.utils.SystemUtils     : os.name: Windows 11
+
+[2025-05-23 22:16:47.876] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] com.mzinno.project.utils.SystemUtils     : 原始jar包路径: file:/C:/Program00/iGMS/resources/app.asar.unpacked/public/java/project.jar!/BOOT-INF/classes!/
+
+[2025-05-23 22:16:47.876] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] com.mzinno.project.utils.SystemUtils     : JAR包路径: C:/Program00/iGMS/resources/app.asar.unpacked/public/java
+
+[2025-05-23 22:16:47.951] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] com.mzinno.project.utils.LicenseUtil     : exec command start: wmic cpu get ProcessorId
+
+[2025-05-23 22:16:47.957] [info]  stdout: 2025-05-23 22:16:47 ERROR 16140 --- [           main] com.mzinno.project.utils.LicenseUtil     : exec command error
+
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:681) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:491) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:366) ~[na:na]
+	at com.mzinno.project.utils.LicenseUtil.exec(LicenseUtil.java:303) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getCPUID(LicenseUtil.java:240) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getMachineCode(LicenseUtil.java:76) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationMessageService.addMessage(ActivationMessageService.java:42) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationMessageService$$SpringCGLIB$$0.addMessage(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationEventService.initEvent(ActivationEventService.java:133) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationEventService$$SpringCGLIB$$0.initEvent(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.schedule.Schedule.init(Schedule.java:60) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:950) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at com.mzinno.project.ProjectApplication.main(ProjectApplication.java:14) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[project.jar:0.0.1-SNAPSHOT]
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:500) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126) ~[na:na]
+	... 65 common frames omitted
+
+
+[2025-05-23 22:16:47.964] [info]  stdout: 2025-05-23 22:16:47  WARN 16140 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedule': Invocation of init method failed
+
+[2025-05-23 22:16:47.976] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+
+[2025-05-23 22:16:47.977] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2025-05-23 22:16:47  INFO 16140 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2025-05-23 22:16:47  INFO 16140 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+
+[2025-05-23 22:16:47.979] [info]  stdout: 2025-05-23 22:16:47  INFO 16140 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+
+[2025-05-23 22:16:48.020] [info]  stdout: 2025-05-23 22:16:48  INFO 16140 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+[2025-05-23 22:16:48.024] [info]  stdout: 2025-05-23 22:16:48  INFO 16140 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+
+[2025-05-23 22:16:48.042] [info]  stdout: 2025-05-23 22:16:48  INFO 16140 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+
+[2025-05-23 22:16:48.075] [info]  stdout: 2025-05-23 22:16:48 ERROR 16140 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedule': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:950) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at com.mzinno.project.ProjectApplication.main(ProjectApplication.java:14) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[project.jar:0.0.1-SNAPSHOT]
+Caused by: java.lang.RuntimeException: exec command error
+	at com.mzinno.project.utils.LicenseUtil.exec(LicenseUtil.java:318) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getCPUID(LicenseUtil.java:240) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getMachineCode(LicenseUtil.java:76) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationMessageService.addMessage(ActivationMessageService.java:42) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationMessageService$$SpringCGLIB$$0.addMessage(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationEventService.initEvent(ActivationEventService.java:133) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationEventService$$SpringCGLIB$$0.initEvent(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.schedule.Schedule.init(Schedule.java:60) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	... 24 common frames omitted
+
+
+[2025-05-23 22:16:48.209] [info]  java close code: 1
+[2025-05-23 22:18:18.770] [info]  runPath:C:\Program00\iGMS\resources\app.asar.unpacked
+[2025-05-23 22:18:18.775] [info]  userData:C:\Users\fx8350\AppData\Roaming\gms
+[2025-05-23 22:18:45.967] [info]  runPath:C:\Program00\iGMS\resources\app.asar.unpacked
+[2025-05-23 22:18:45.971] [info]  userData:C:\Users\fx8350\AppData\Roaming\gms
+[2025-05-23 22:19:24.525] [info]  window-all-closed
+[2025-05-23 22:19:24.526] [info]  process.platform win32
+[2025-05-23 22:19:24.526] [info]  updating false
+[2025-05-23 22:19:40.749] [info]  runPath:C:\Program00\iGMS\resources\app.asar.unpacked
+[2025-05-23 22:19:40.753] [info]  userData:C:\Users\fx8350\AppData\Roaming\gms
+[2025-05-23 22:19:40.791] [info]  startMysql
+[2025-05-23 22:19:40.847] [info]  version sql update:SELECT * FROM plan_config
+[2025-05-23 22:19:40.921] [info]  sql version:2.1.5
+[2025-05-23 22:19:40.946] [info]  sourcemap lines:1.4.0,1.5.0,1.5.1,1.6.0,1.6.2,1.6.5,1.7.0,1.7.1,1.7.2,1.8.0,2.0.0,2.0.1,2.1.0,2.1.1,2.1.5
+[2025-05-23 22:19:40.946] [info]  line:1.4.0,runFlag:false
+[2025-05-23 22:19:40.947] [info]  line:1.5.0,runFlag:false
+[2025-05-23 22:19:40.947] [info]  line:1.5.1,runFlag:false
+[2025-05-23 22:19:40.947] [info]  line:1.6.0,runFlag:false
+[2025-05-23 22:19:40.948] [info]  line:1.6.2,runFlag:false
+[2025-05-23 22:19:40.948] [info]  line:1.6.5,runFlag:false
+[2025-05-23 22:19:40.949] [info]  line:1.7.0,runFlag:false
+[2025-05-23 22:19:40.949] [info]  line:1.7.1,runFlag:false
+[2025-05-23 22:19:40.949] [info]  line:1.7.2,runFlag:false
+[2025-05-23 22:19:40.950] [info]  line:1.8.0,runFlag:false
+[2025-05-23 22:19:40.950] [info]  line:2.0.0,runFlag:false
+[2025-05-23 22:19:40.950] [info]  line:2.0.1,runFlag:false
+[2025-05-23 22:19:40.950] [info]  line:2.1.0,runFlag:false
+[2025-05-23 22:19:40.951] [info]  line:2.1.1,runFlag:false
+[2025-05-23 22:19:40.951] [info]  line:2.1.5,runFlag:false
+[2025-05-23 22:19:40.960] [info]  version sql update:SELECT MAX(id) id FROM acl WHERE deleted = 0
+[2025-05-23 22:19:40.961] [info]  sqlList empty
+[2025-05-23 22:19:41.179] [info]  mysql close code: 1
+[2025-05-23 22:19:42.051] [info]  stdout: 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[2025-05-23 22:19:42.058] [info]  stdout:  :: Spring Boot ::                (v3.1.5)
+
+
+[2025-05-23 22:19:42.138] [info]  stdout: 2025-05-23 22:19:42  INFO 15184 --- [           main] com.mzinno.project.ProjectApplication    : Starting ProjectApplication v0.0.1-SNAPSHOT using Java 21 with PID 15184 (C:\Program00\iGMS\resources\app.asar.unpacked\public\java\project.jar started by fx8350 in C:\Program00\iGMS)
+
+[2025-05-23 22:19:42.139] [info]  stdout: 2025-05-23 22:19:42  INFO 15184 --- [           main] com.mzinno.project.ProjectApplication    : The following 1 profile is active: "default"
+
+[2025-05-23 22:19:44.603] [info]  stdout: 2025-05-23 22:19:44  INFO 15184 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 45679 (http)
+
+[2025-05-23 22:19:44.612] [info]  stdout: 2025-05-23 22:19:44  INFO 15184 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+
+[2025-05-23 22:19:44.613] [info]  stdout: 2025-05-23 22:19:44  INFO 15184 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+
+[2025-05-23 22:19:44.697] [info]  stdout: 2025-05-23 22:19:44  INFO 15184 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+
+[2025-05-23 22:19:44.698] [info]  stdout: 2025-05-23 22:19:44  INFO 15184 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2493 ms
+
+[2025-05-23 22:19:45.153] [info]  stdout:  _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+
+[2025-05-23 22:19:45.154] [info]  stdout:                         3.5.4 
+
+[2025-05-23 22:19:46.697] [info]  stdout: 2025-05-23 22:19:46  INFO 15184 --- [           main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+
+[2025-05-23 22:19:46.712] [info]  stdout: 2025-05-23 22:19:46  INFO 15184 --- [           main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-05-23 22:19:46  INFO 15184 --- [           main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+
+[2025-05-23 22:19:46.714] [info]  stdout: 2025-05-23 22:19:46  INFO 15184 --- [           main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+
+[2025-05-23 22:19:46.714] [info]  stdout: 2025-05-23 22:19:46  INFO 15184 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+[2025-05-23 22:19:46.715] [info]  stdout: 2025-05-23 22:19:46  INFO 15184 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-05-23 22:19:46  INFO 15184 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2025-05-23 22:19:46  INFO 15184 --- [           main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@68a4dcc6
+
+[2025-05-23 22:19:49.195] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+
+[2025-05-23 22:19:49.615] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@481b2f10
+
+[2025-05-23 22:19:49.618] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+[2025-05-23 22:19:49.655] [info]  stdout: 2025-05-23 22:19:49 ERROR 15184 --- [         task-1] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void com.mzinno.project.schedule.TenantTaskExecutor.executeTasksForAllTenants(com.mzinno.project.schedule.ScheduleTask)
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.context.ApplicationContext.getBean(java.lang.Class)" because "com.mzinno.project.utils.SpringContextUtil.applicationContext" is null
+	at com.mzinno.project.utils.SpringContextUtil.getBean(SpringContextUtil.java:47) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.schedule.TenantTaskExecutor.executeTasksForAllTenants(TenantTaskExecutor.java:29) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+
+[2025-05-23 22:19:49.775] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] com.mzinno.project.utils.SystemUtils     : os.name: Windows 11
+
+[2025-05-23 22:19:49.776] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] com.mzinno.project.utils.SystemUtils     : 原始jar包路径: file:/C:/Program00/iGMS/resources/app.asar.unpacked/public/java/project.jar!/BOOT-INF/classes!/
+2025-05-23 22:19:49  INFO 15184 --- [           main] com.mzinno.project.utils.SystemUtils     : JAR包路径: C:/Program00/iGMS/resources/app.asar.unpacked/public/java
+
+[2025-05-23 22:19:49.836] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] com.mzinno.project.utils.LicenseUtil     : exec command start: wmic cpu get ProcessorId
+
+[2025-05-23 22:19:49.840] [info]  stdout: 2025-05-23 22:19:49 ERROR 15184 --- [           main] com.mzinno.project.utils.LicenseUtil     : exec command error
+
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:681) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:491) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:366) ~[na:na]
+	at com.mzinno.project.utils.LicenseUtil.exec(LicenseUtil.java:303) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getCPUID(LicenseUtil.java:240) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getMachineCode(LicenseUtil.java:76) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationMessageService.addMessage(ActivationMessageService.java:42) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationMessageService$$SpringCGLIB$$0.addMessage(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationEventService.initEvent(ActivationEventService.java:133) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationEventService$$SpringCGLIB$$0.initEvent(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.schedule.Schedule.init(Schedule.java:60) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:950) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at com.mzinno.project.ProjectApplication.main(ProjectApplication.java:14) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[project.jar:0.0.1-SNAPSHOT]
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:500) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126) ~[na:na]
+	... 65 common frames omitted
+
+
+[2025-05-23 22:19:49.846] [info]  stdout: 2025-05-23 22:19:49  WARN 15184 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedule': Invocation of init method failed
+
+[2025-05-23 22:19:49.855] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+
+[2025-05-23 22:19:49.856] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2025-05-23 22:19:49  INFO 15184 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2025-05-23 22:19:49  INFO 15184 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+
+[2025-05-23 22:19:49.857] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+
+[2025-05-23 22:19:49.886] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+[2025-05-23 22:19:49.890] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+
+[2025-05-23 22:19:49.903] [info]  stdout: 2025-05-23 22:19:49  INFO 15184 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+
+[2025-05-23 22:19:49.922] [info]  stdout: 2025-05-23 22:19:49 ERROR 15184 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedule': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:950) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at com.mzinno.project.ProjectApplication.main(ProjectApplication.java:14) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[project.jar:0.0.1-SNAPSHOT]
+Caused by: java.lang.RuntimeException: exec command error
+	at com.mzinno.project.utils.LicenseUtil.exec(LicenseUtil.java:318) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getCPUID(LicenseUtil.java:240) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getMachineCode(LicenseUtil.java:76) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationMessageService.addMessage(ActivationMessageService.java:42) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationMessageService$$SpringCGLIB$$0.addMessage(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationEventService.initEvent(ActivationEventService.java:133) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationEventService$$SpringCGLIB$$0.initEvent(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.schedule.Schedule.init(Schedule.java:60) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	... 24 common frames omitted
+
+
+[2025-05-23 22:19:50.311] [info]  java close code: 1
+[2025-05-23 22:19:59.373] [info]  window-all-closed
+[2025-05-23 22:19:59.374] [info]  process.platform win32
+[2025-05-23 22:19:59.374] [info]  updating false
+[2025-05-23 22:20:02.118] [info]  runPath:C:\Program00\iGMS\resources\app.asar.unpacked
+[2025-05-23 22:20:02.122] [info]  userData:C:\Users\fx8350\AppData\Roaming\gms
+[2025-05-23 22:20:02.160] [info]  startMysql
+[2025-05-23 22:20:02.208] [error] link mysql error connect ECONNREFUSED 127.0.0.1:45678
+[2025-05-23 22:20:02.209] [error] link mysql error connect ECONNREFUSED 127.0.0.1:45678
+[2025-05-23 22:20:03.227] [info]  version sql update:SELECT * FROM plan_config
+[2025-05-23 22:20:03.302] [info]  sql version:2.1.5
+[2025-05-23 22:20:03.328] [info]  sourcemap lines:1.4.0,1.5.0,1.5.1,1.6.0,1.6.2,1.6.5,1.7.0,1.7.1,1.7.2,1.8.0,2.0.0,2.0.1,2.1.0,2.1.1,2.1.5
+[2025-05-23 22:20:03.329] [info]  line:1.4.0,runFlag:false
+[2025-05-23 22:20:03.329] [info]  line:1.5.0,runFlag:false
+[2025-05-23 22:20:03.330] [info]  line:1.5.1,runFlag:false
+[2025-05-23 22:20:03.330] [info]  line:1.6.0,runFlag:false
+[2025-05-23 22:20:03.330] [info]  line:1.6.2,runFlag:false
+[2025-05-23 22:20:03.331] [info]  line:1.6.5,runFlag:false
+[2025-05-23 22:20:03.331] [info]  line:1.7.0,runFlag:false
+[2025-05-23 22:20:03.331] [info]  line:1.7.1,runFlag:false
+[2025-05-23 22:20:03.331] [info]  line:1.7.2,runFlag:false
+[2025-05-23 22:20:03.332] [info]  line:1.8.0,runFlag:false
+[2025-05-23 22:20:03.332] [info]  line:2.0.0,runFlag:false
+[2025-05-23 22:20:03.332] [info]  line:2.0.1,runFlag:false
+[2025-05-23 22:20:03.332] [info]  line:2.1.0,runFlag:false
+[2025-05-23 22:20:03.333] [info]  line:2.1.1,runFlag:false
+[2025-05-23 22:20:03.333] [info]  line:2.1.5,runFlag:false
+[2025-05-23 22:20:03.341] [info]  version sql update:SELECT MAX(id) id FROM acl WHERE deleted = 0
+[2025-05-23 22:20:03.342] [info]  sqlList empty
+[2025-05-23 22:20:04.396] [info]  stdout: 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+
+[2025-05-23 22:20:04.397] [info]  stdout:  =========|_|==============|___/=/_/_/_/
+
+[2025-05-23 22:20:04.401] [info]  stdout:  :: Spring Boot ::                (v3.1.5)
+
+
+[2025-05-23 22:20:04.483] [info]  stdout: 2025-05-23 22:20:04  INFO 3840 --- [           main] com.mzinno.project.ProjectApplication    : Starting ProjectApplication v0.0.1-SNAPSHOT using Java 21 with PID 3840 (C:\Program00\iGMS\resources\app.asar.unpacked\public\java\project.jar started by fx8350 in C:\Program00\iGMS)
+
+[2025-05-23 22:20:04.484] [info]  stdout: 2025-05-23 22:20:04  INFO 3840 --- [           main] com.mzinno.project.ProjectApplication    : The following 1 profile is active: "default"
+
+[2025-05-23 22:20:06.816] [info]  stdout: 2025-05-23 22:20:06  INFO 3840 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 45679 (http)
+
+[2025-05-23 22:20:06.826] [info]  stdout: 2025-05-23 22:20:06  INFO 3840 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+
+[2025-05-23 22:20:06.827] [info]  stdout: 2025-05-23 22:20:06  INFO 3840 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+
+[2025-05-23 22:20:06.913] [info]  stdout: 2025-05-23 22:20:06  INFO 3840 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+
+[2025-05-23 22:20:06.914] [info]  stdout: 2025-05-23 22:20:06  INFO 3840 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2376 ms
+
+[2025-05-23 22:20:07.333] [info]  stdout:  _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+
+[2025-05-23 22:20:07.334] [info]  stdout:                         3.5.4 
+
+[2025-05-23 22:20:08.811] [info]  stdout: 2025-05-23 22:20:08  INFO 3840 --- [           main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+
+[2025-05-23 22:20:08.828] [info]  stdout: 2025-05-23 22:20:08  INFO 3840 --- [           main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-05-23 22:20:08  INFO 3840 --- [           main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+
+[2025-05-23 22:20:08.829] [info]  stdout: 2025-05-23 22:20:08  INFO 3840 --- [           main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+
+[2025-05-23 22:20:08.830] [info]  stdout: 2025-05-23 22:20:08  INFO 3840 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+[2025-05-23 22:20:08.831] [info]  stdout: 2025-05-23 22:20:08  INFO 3840 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-05-23 22:20:08  INFO 3840 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2025-05-23 22:20:08  INFO 3840 --- [           main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@68a4dcc6
+
+[2025-05-23 22:20:11.251] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+
+[2025-05-23 22:20:11.585] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@481b2f10
+
+[2025-05-23 22:20:11.587] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+[2025-05-23 22:20:11.620] [info]  stdout: 2025-05-23 22:20:11 ERROR 3840 --- [         task-1] .a.i.SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void com.mzinno.project.schedule.TenantTaskExecutor.executeTasksForAllTenants(com.mzinno.project.schedule.ScheduleTask)
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.context.ApplicationContext.getBean(java.lang.Class)" because "com.mzinno.project.utils.SpringContextUtil.applicationContext" is null
+	at com.mzinno.project.utils.SpringContextUtil.getBean(SpringContextUtil.java:47) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.schedule.TenantTaskExecutor.executeTasksForAllTenants(TenantTaskExecutor.java:29) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+
+[2025-05-23 22:20:11.756] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] com.mzinno.project.utils.SystemUtils     : os.name: Windows 11
+
+[2025-05-23 22:20:11.757] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] com.mzinno.project.utils.SystemUtils     : 原始jar包路径: file:/C:/Program00/iGMS/resources/app.asar.unpacked/public/java/project.jar!/BOOT-INF/classes!/
+2025-05-23 22:20:11  INFO 3840 --- [           main] com.mzinno.project.utils.SystemUtils     : JAR包路径: C:/Program00/iGMS/resources/app.asar.unpacked/public/java
+
+[2025-05-23 22:20:11.802] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] com.mzinno.project.utils.LicenseUtil     : exec command start: wmic cpu get ProcessorId
+
+[2025-05-23 22:20:11.806] [info]  stdout: 2025-05-23 22:20:11 ERROR 3840 --- [           main] com.mzinno.project.utils.LicenseUtil     : exec command error
+
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:681) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:491) ~[na:na]
+	at java.base/java.lang.Runtime.exec(Runtime.java:366) ~[na:na]
+	at com.mzinno.project.utils.LicenseUtil.exec(LicenseUtil.java:303) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getCPUID(LicenseUtil.java:240) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getMachineCode(LicenseUtil.java:76) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationMessageService.addMessage(ActivationMessageService.java:42) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationMessageService$$SpringCGLIB$$0.addMessage(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationEventService.initEvent(ActivationEventService.java:133) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationEventService$$SpringCGLIB$$0.initEvent(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.schedule.Schedule.init(Schedule.java:60) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:950) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at com.mzinno.project.ProjectApplication.main(ProjectApplication.java:14) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[project.jar:0.0.1-SNAPSHOT]
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method) ~[na:na]
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:500) ~[na:na]
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159) ~[na:na]
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126) ~[na:na]
+	... 65 common frames omitted
+
+
+[2025-05-23 22:20:11.814] [info]  stdout: 2025-05-23 22:20:11  WARN 3840 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedule': Invocation of init method failed
+
+[2025-05-23 22:20:11.823] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2025-05-23 22:20:11  INFO 3840 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+
+[2025-05-23 22:20:11.824] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2025-05-23 22:20:11  INFO 3840 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+
+[2025-05-23 22:20:11.824] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+
+[2025-05-23 22:20:11.830] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+[2025-05-23 22:20:11.832] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+
+[2025-05-23 22:20:11.844] [info]  stdout: 2025-05-23 22:20:11  INFO 3840 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+
+[2025-05-23 22:20:11.869] [info]  stdout: 2025-05-23 22:20:11 ERROR 3840 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedule': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:950) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.0.13.jar!/:6.0.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.5.jar!/:3.1.5]
+	at com.mzinno.project.ProjectApplication.main(ProjectApplication.java:14) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[project.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[project.jar:0.0.1-SNAPSHOT]
+Caused by: java.lang.RuntimeException: exec command error
+	at com.mzinno.project.utils.LicenseUtil.exec(LicenseUtil.java:318) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getCPUID(LicenseUtil.java:240) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.utils.LicenseUtil.getMachineCode(LicenseUtil.java:76) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationMessageService.addMessage(ActivationMessageService.java:42) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationMessageService$$SpringCGLIB$$0.addMessage(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.service.metadata.ActivationEventService.initEvent(ActivationEventService.java:133) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.13.jar!/:6.0.13]
+	at com.mzinno.project.service.metadata.ActivationEventService$$SpringCGLIB$$0.initEvent(<generated>) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.mzinno.project.schedule.Schedule.init(Schedule.java:60) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.0.13.jar!/:6.0.13]
+	... 24 common frames omitted
+
+
+[2025-05-23 22:20:11.936] [info]  java close code: 1
