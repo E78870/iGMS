@@ -1,0 +1,2179 @@
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:20:03
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Fetch of persistent statistics requested for table `gm23`.`system_language` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:20:03.2903354Z" />
+    <EventRecordID>4591</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Fetch of persistent statistics requested for table `gm23`.`system_language` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:20:03
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Table `mysql`.`innodb_table_stats` not found.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:20:03.2890984Z" />
+    <EventRecordID>4590</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Table `mysql`.`innodb_table_stats` not found.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:20:03
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Fetch of persistent statistics requested for table `gm23`.`activation_event` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:20:03.2712060Z" />
+    <EventRecordID>4589</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Fetch of persistent statistics requested for table `gm23`.`activation_event` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:20:03
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Table `mysql`.`innodb_table_stats` not found.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:20:03.2700484Z" />
+    <EventRecordID>4588</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Table `mysql`.`innodb_table_stats` not found.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:55
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Fetch of persistent statistics requested for table `gm23`.`acl` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:55.1436557Z" />
+    <EventRecordID>4587</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Fetch of persistent statistics requested for table `gm23`.`acl` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:55
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Table `mysql`.`innodb_table_stats` not found.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:55.1419727Z" />
+    <EventRecordID>4586</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Table `mysql`.`innodb_table_stats` not found.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Fetch of persistent statistics requested for table `gm23`.`exe_version` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8761471Z" />
+    <EventRecordID>4585</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Fetch of persistent statistics requested for table `gm23`.`exe_version` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Table `mysql`.`innodb_table_stats` not found.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8744544Z" />
+    <EventRecordID>4584</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Table `mysql`.`innodb_table_stats` not found.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Fetch of persistent statistics requested for table `gm23`.`plan_config` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8678490Z" />
+    <EventRecordID>4583</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Fetch of persistent statistics requested for table `gm23`.`plan_config` but the required system tables mysql.innodb_table_stats and mysql.innodb_index_stats are not present or have unexpected structure. Using transient stats instead.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Table `mysql`.`innodb_table_stats` not found.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8657059Z" />
+    <EventRecordID>4582</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Table `mysql`.`innodb_table_stats` not found.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+./bin/mysqld.exe: ready for connections.
+Version: '5.7.30-log'  socket: ''  port: 45678  MySQL Community Server (GPL)For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8490170Z" />
+    <EventRecordID>4581</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>./bin/mysqld.exe: ready for connections.
+Version: '5.7.30-log'  socket: ''  port: 45678  MySQL Community Server (GPL)</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Event Scheduler: Loaded 0 eventsFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8482126Z" />
+    <EventRecordID>4580</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Event Scheduler: Loaded 0 events</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Failed to start slave threads for channel ''For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8230143Z" />
+    <EventRecordID>4579</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Failed to start slave threads for channel ''</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Info table is not ready to be used. Table 'mysql.slave_relay_log_info' cannot be opened.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8225192Z" />
+    <EventRecordID>4578</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Info table is not ready to be used. Table 'mysql.slave_relay_log_info' cannot be opened.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/slave_relay_log_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8219347Z" />
+    <EventRecordID>4577</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/slave_relay_log_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/slave_worker_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8206351Z" />
+    <EventRecordID>4576</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/slave_worker_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Info table is not ready to be used. Table 'mysql.slave_master_info' cannot be opened.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8190749Z" />
+    <EventRecordID>4575</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Info table is not ready to be used. Table 'mysql.slave_master_info' cannot be opened.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/slave_master_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8185129Z" />
+    <EventRecordID>4574</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/slave_master_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/slave_relay_log_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8172630Z" />
+    <EventRecordID>4573</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/slave_relay_log_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/slave_master_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8157582Z" />
+    <EventRecordID>4572</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/slave_master_info from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Can't open and lock privilege tables: Table 'mysql.servers' doesn't existFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8136064Z" />
+    <EventRecordID>4571</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/servers from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8130741Z" />
+    <EventRecordID>4570</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/servers from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without themFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8098434Z" />
+    <EventRecordID>4569</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Can't open and lock time zone table: Table 'mysql.time_zone_leap_second' doesn't exist trying to live without them</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/time_zone_leap_second from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.8090393Z" />
+    <EventRecordID>4568</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/time_zone_leap_second from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Failed to open optimizer cost constant tables
+For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7796380Z" />
+    <EventRecordID>4567</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Failed to open optimizer cost constant tables
+</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/server_cost from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7791625Z" />
+    <EventRecordID>4566</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/server_cost from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Server socket created on IP: '::'.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7771806Z" />
+    <EventRecordID>4565</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Server socket created on IP: '::'.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+  - '::' resolves to '::';For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7767432Z" />
+    <EventRecordID>4564</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>  - '::' resolves to '::';</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+IPv6 is available.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7763828Z" />
+    <EventRecordID>4563</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>IPv6 is available.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Server hostname (bind-address): '*'; port: 45678For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7758227Z" />
+    <EventRecordID>4562</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Server hostname (bind-address): '*'; port: 45678</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Skipping generation of RSA key pair as key files are present in data directory.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7640337Z" />
+    <EventRecordID>4561</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Skipping generation of RSA key pair as key files are present in data directory.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+CA certificate ca.pem is self signed.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7633534Z" />
+    <EventRecordID>4560</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>CA certificate ca.pem is self signed.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Skipping generation of SSL certificates as certificate files are present in data directory.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7403139Z" />
+    <EventRecordID>4559</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Skipping generation of SSL certificates as certificate files are present in data directory.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7397589Z" />
+    <EventRecordID>4558</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7382790Z" />
+    <EventRecordID>4557</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/gtid_executed from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7376626Z" />
+    <EventRecordID>4556</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/gtid_executed from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Buffer pool(s) load completed at 250524 16:19:54For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7357460Z" />
+    <EventRecordID>4555</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Buffer pool(s) load completed at 250524 16:19:54</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            错误
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Can't open the mysql.plugin table. Please run mysql_upgrade to create it.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7298438Z" />
+    <EventRecordID>4554</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Can't open the mysql.plugin table. Please run mysql_upgrade to create it.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            警告
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Cannot open table mysql/plugin from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>3</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7292503Z" />
+    <EventRecordID>4553</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Cannot open table mysql/plugin from the internal data dictionary of InnoDB though the .frm file for the table exists. Please refer to http://dev.mysql.com/doc/refman/5.7/en/innodb-troubleshooting.html for how to resolve the issue.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Loading buffer pool(s) from C:\Users\fx8350\AppData\Roaming\gms\mysql\Data\ib_buffer_poolFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7272699Z" />
+    <EventRecordID>4552</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Loading buffer pool(s) from C:\Users\fx8350\AppData\Roaming\gms\mysql\Data\ib_buffer_pool</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+Plugin 'FEDERATED' is disabled.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7267750Z" />
+    <EventRecordID>4551</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>Plugin 'FEDERATED' is disabled.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: 5.7.30 started; log sequence number 47427150For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.7260277Z" />
+    <EventRecordID>4550</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: 5.7.30 started; log sequence number 47427150</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Waiting for purge to startFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.6672747Z" />
+    <EventRecordID>4549</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Waiting for purge to start</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: 32 non-redo rollback segment(s) are active.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.6666400Z" />
+    <EventRecordID>4548</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: 32 non-redo rollback segment(s) are active.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.6661739Z" />
+    <EventRecordID>4547</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: File '.\ibtmp1' size is now 12 MB.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.6567988Z" />
+    <EventRecordID>4546</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: File '.\ibtmp1' size is now 12 MB.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.6359146Z" />
+    <EventRecordID>4545</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Creating shared tablespace for temporary tablesFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.6350952Z" />
+    <EventRecordID>4544</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Creating shared tablespace for temporary tables</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:54
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Removed temporary tablespace data file: "ibtmp1"For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:54.6345281Z" />
+    <EventRecordID>4543</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Removed temporary tablespace data file: "ibtmp1"</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Starting crash recovery.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.8017525Z" />
+    <EventRecordID>4542</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Starting crash recovery.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Database was not shutdown normally!For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.8013978Z" />
+    <EventRecordID>4541</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Database was not shutdown normally!</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Doing recovery: scanned up to log sequence number 47427150For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.8009012Z" />
+    <EventRecordID>4540</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Doing recovery: scanned up to log sequence number 47427150</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Log scan progressed past the checkpoint lsn 47427141For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.8004158Z" />
+    <EventRecordID>4539</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Log scan progressed past the checkpoint lsn 47427141</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Highest supported file format is Barracuda.For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7988309Z" />
+    <EventRecordID>4538</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Highest supported file format is Barracuda.</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Completed initialization of buffer poolFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7479162Z" />
+    <EventRecordID>4537</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Completed initialization of buffer pool</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Initializing buffer pool, total size = 8M, instances = 1, chunk size = 8MFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7471263Z" />
+    <EventRecordID>4536</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Initializing buffer pool, total size = 8M, instances = 1, chunk size = 8M</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Not using CPU crc32 instructionsFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7449303Z" />
+    <EventRecordID>4535</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Not using CPU crc32 instructions</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Number of pools: 1For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7444540Z" />
+    <EventRecordID>4534</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Number of pools: 1</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Adjusting innodb_buffer_pool_instances from 8 to 1 since innodb_buffer_pool_size is less than 1024 MiBFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7438553Z" />
+    <EventRecordID>4533</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Adjusting innodb_buffer_pool_instances from 8 to 1 since innodb_buffer_pool_size is less than 1024 MiB</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Compressed tables use zlib 1.2.11For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7432441Z" />
+    <EventRecordID>4532</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Compressed tables use zlib 1.2.11</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrierFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7428852Z" />
+    <EventRecordID>4531</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Uses event mutexesFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7424118Z" />
+    <EventRecordID>4530</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Uses event mutexes</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+InnoDB: Mutexes and rw_locks use Windows interlocked functionsFor more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7419444Z" />
+    <EventRecordID>4529</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>InnoDB: Mutexes and rw_locks use Windows interlocked functions</Data>
+  </EventData>
+</Event>
+
+日志名称:          Application
+来源:            MySQL
+日期:            2025/5/24 16:19:53
+事件 ID:         100
+任务类别:          无
+级别:            信息
+关键字:           经典
+用户:            暂缺
+计算机:           Desktop
+描述:
+./bin/mysqld.exe (mysqld 5.7.30-log) starting as process 16688 ...For more information, see Help and Support Center at http://www.mysql.com.  
+事件 Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="MySQL" />
+    <EventID Qualifiers="49152">100</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2025-05-24T08:19:53.7090731Z" />
+    <EventRecordID>4528</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="16688" ThreadID="0" />
+    <Channel>Application</Channel>
+    <Computer>Desktop</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>./bin/mysqld.exe (mysqld 5.7.30-log) starting as process 16688 ...</Data>
+  </EventData>
+</Event>
